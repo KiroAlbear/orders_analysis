@@ -1,8 +1,8 @@
 import 'dart:convert';
 
 import 'package:flutter/services.dart';
-import 'package:new_visitor/core/models/graph_model.dart';
-import 'package:new_visitor/core/models/order_response_model.dart';
+import 'package:orders_analysis/core/models/graph_model.dart';
+import 'package:orders_analysis/core/models/order_response_model.dart';
 
 class JsonParsingService {
   static List<OrderResponseModel> ordersData = [];
@@ -36,31 +36,29 @@ class JsonParsingService {
       DateTime date = DateTime.parse(element.registered!);
       String formatedDate = "${date.day}/${date.month}/${date.year}";
 
+      //  ordersData.forEach((element) {
+      //   DateTime elemDate = DateTime.parse(element.registered!);
+      //    if (elemDate.day == date.day &&
+      //        elemDate.month == date.month &&
+      //        elemDate.year == date.year) {
 
-    //  ordersData.forEach((element) {
-    //   DateTime elemDate = DateTime.parse(element.registered!);
-    //    if (elemDate.day == date.day &&
-    //        elemDate.month == date.month &&
-    //        elemDate.year == date.year) {
+      //         if(ordersByDate[formatedDate] == null){
+      //            ordersByDate[formatedDate] = 1;
+      //         }else{
+      //           ordersByDate[formatedDate] = ordersByDate[formatedDate]! + 1;
+      //         }
+      //    }
+      //   });
 
-    //         if(ordersByDate[formatedDate] == null){
-    //            ordersByDate[formatedDate] = 1;
-    //         }else{
-    //           ordersByDate[formatedDate] = ordersByDate[formatedDate]! + 1;
-    //         }
-    //    }
-    //   });
-
-       ordersByDate[formatedDate] = ordersData.where((element) {
+      ordersByDate[formatedDate] = ordersData.where((element) {
         DateTime elemDate = DateTime.parse(element.registered!);
         return elemDate.day == date.day &&
             elemDate.month == date.month &&
             elemDate.year == date.year;
-       }).length;
-      
-      // ordersByDate.removeWhere((key, value) => value == 1); 
+      }).length;
 
-     
+      // ordersByDate.removeWhere((key, value) => value == 1);
+
       String parsedPrice =
           element.price!.replaceAll(",", '').replaceAll("\$", "");
       total += double.parse(parsedPrice);

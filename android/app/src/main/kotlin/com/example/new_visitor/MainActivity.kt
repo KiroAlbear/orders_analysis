@@ -1,4 +1,4 @@
-package com.example.new_visitor
+package com.example.orders_analysis
 
 import io.flutter.embedding.android.FlutterActivity
 

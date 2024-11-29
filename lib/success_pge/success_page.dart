@@ -1,10 +1,10 @@
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
-import 'package:new_visitor/core/custom_button.dart';
-import 'package:new_visitor/core/models/graph_model.dart';
-import 'package:new_visitor/core/services/json_parsing_service.dart';
-import 'package:new_visitor/core/static_colors.dart';
-import 'package:new_visitor/gen/assets.gen.dart';
+import 'package:orders_analysis/core/custom_button.dart';
+import 'package:orders_analysis/core/models/graph_model.dart';
+import 'package:orders_analysis/core/services/json_parsing_service.dart';
+import 'package:orders_analysis/core/static_colors.dart';
+import 'package:orders_analysis/gen/assets.gen.dart';
 
 class SuccessPage extends StatelessWidget {
   final double _qrSize = 220;
@@ -43,8 +43,6 @@ class SuccessPage extends StatelessWidget {
   }
 
   List<BarChartGroupData> _getBarChartGroupData() {
-
-
     List<BarChartGroupData> barChartGroupData = [];
     for (int i = 0; i < graphData.length; i++) {
       barChartGroupData.add(BarChartGroupData(
@@ -118,9 +116,7 @@ class SuccessPage extends StatelessWidget {
                   show: true,
                   drawHorizontalLine: true,
                 ),
-              ))
-           
-              ),
+              ))),
           SizedBox(
             height: 40,
           ),
@@ -136,7 +132,6 @@ class SuccessPage extends StatelessWidget {
           SizedBox(
             height: 10,
           ),
-       
         ],
       ),
     );

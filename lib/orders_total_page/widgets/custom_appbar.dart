@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:new_visitor/core/font/custom_text_styles.dart';
-import 'package:new_visitor/gen/assets.gen.dart';
+import 'package:orders_analysis/core/font/custom_text_styles.dart';
+import 'package:orders_analysis/gen/assets.gen.dart';
 
 class CustomAppbar extends StatelessWidget {
   const CustomAppbar({super.key});

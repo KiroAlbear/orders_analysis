@@ -5,18 +5,18 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "new_visitor",
+            "name": "orders_analysis",
             "request": "launch",
             "type": "dart"
         },
         {
-            "name": "new_visitor (profile mode)",
+            "name": "orders_analysis (profile mode)",
             "request": "launch",
             "type": "dart",
             "flutterMode": "profile"
         },
         {
-            "name": "new_visitor (release mode)",
+            "name": "orders_analysis (release mode)",
             "request": "launch",
             "type": "dart",
             "flutterMode": "release"

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:new_visitor/core/font/text_style_blueprint.dart';
-import 'package:new_visitor/core/static_colors.dart';
+import 'package:orders_analysis/core/font/text_style_blueprint.dart';
+import 'package:orders_analysis/core/static_colors.dart';
 
 class CustomTextStyles {
   CustomTextStyles._();

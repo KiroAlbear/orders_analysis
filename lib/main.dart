@@ -1,11 +1,11 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
-import 'package:new_visitor/core/services/json_parsing_service.dart';
-import 'package:new_visitor/core/static_colors.dart';
-import 'package:new_visitor/gen/assets.gen.dart';
-import 'package:new_visitor/success_pge/success_page.dart';
-import 'package:new_visitor/orders_total_page/orders_total_page.dart';
+import 'package:orders_analysis/core/services/json_parsing_service.dart';
+import 'package:orders_analysis/core/static_colors.dart';
+import 'package:orders_analysis/gen/assets.gen.dart';
+import 'package:orders_analysis/success_pge/success_page.dart';
+import 'package:orders_analysis/orders_total_page/orders_total_page.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

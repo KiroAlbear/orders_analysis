@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-import 'package:new_visitor/core/custom_button.dart';
-import 'package:new_visitor/core/font/custom_text_styles.dart';
-import 'package:new_visitor/core/services/json_parsing_service.dart';
-import 'package:new_visitor/gen/assets.gen.dart';
-import 'package:new_visitor/success_pge/success_page.dart';
-import 'package:new_visitor/orders_total_page/widgets/custom_data_card.dart';
-import 'package:new_visitor/orders_total_page/widgets/custom_appbar.dart';
+import 'package:orders_analysis/core/custom_button.dart';
+import 'package:orders_analysis/core/font/custom_text_styles.dart';
+import 'package:orders_analysis/core/services/json_parsing_service.dart';
+import 'package:orders_analysis/gen/assets.gen.dart';
+import 'package:orders_analysis/success_pge/success_page.dart';
+import 'package:orders_analysis/orders_total_page/widgets/custom_data_card.dart';
+import 'package:orders_analysis/orders_total_page/widgets/custom_appbar.dart';
 
 class OrdersTotalPage extends StatefulWidget {
   OrdersTotalPage({
